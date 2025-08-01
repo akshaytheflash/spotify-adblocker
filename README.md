@@ -15,3 +15,10 @@ this was too much code to not upload 👍
 > checks if any of them contain the wide strings we talked about, if it does, puts it in a new vector (named containsSpotifyAd i think)
 > keeps checking in a loop if containsSpotifyAd is empty, if it is, means no ad (any window with the bad strings) is playing, so boosts the volume to max
 > if it is non empty, means one of the bad strnigs is playing, so it mutes the app specific audio (sets it to 0)
+
+## how to compile from source
+use the visual studio command prompt if you face any errors using gpp
+
+<img width="287" height="81" alt="image" src="https://github.com/user-attachments/assets/332e8371-ff08-4b5d-ba65-a9c48f9c8670" />
+
+the command is ```cl /EHsc beta.cpp /link ole32.lib oleaut32.lib psapi.lib```
